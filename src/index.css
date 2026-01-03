@@ -48,3 +48,31 @@ html {
 .container .header .btn a {
   text-decoration: none;
 }
+
+.filter-bar {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.filter-btn.active {
+  background-color: #1976d2; /* MUI primary */
+  color: #fff;
+  border-color: #1976d2;
+}
