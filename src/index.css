@@ -48,14 +48,3 @@ html {
 .container .header .btn a {
   text-decoration: none;
 }
-
-.container .status {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-  width: 200px;
-  height: 50px;
-  border-radius: 10px;
-  background: #aac4f5;
-}
