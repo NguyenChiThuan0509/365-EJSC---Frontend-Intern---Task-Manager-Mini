@@ -1,0 +1,37 @@
+/* Task List */
+.task-list {
+  list-style: none;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px 16px;
+  margin-bottom: 10px;
+
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.task-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.task-delete-btn {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.task-delete-btn:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}

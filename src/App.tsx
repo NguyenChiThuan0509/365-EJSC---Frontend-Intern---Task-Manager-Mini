@@ -1,6 +1,6 @@
 import { useState } from "react";
 import type { Task } from "./types/task";
-import { TaskList } from "./components/TaskList";
+import { TaskList } from "./components/TaskList/TaskList";
 import CreateNewTask from "./components/CreateNewTask/CreateNewTask";
 
 function App() {

@@ -26,7 +26,12 @@ const CreateNewTask = ({ onAddTask }: Props) => {
         onChange={(e) => setTitle(e.target.value)}
       />
 
-      <Button type="submit" variant="contained">
+      <Button
+        style={{ marginLeft: "10px" }}
+        className="task-add-btn"
+        type="submit"
+        variant="contained"
+      >
         Add
       </Button>
     </form>
