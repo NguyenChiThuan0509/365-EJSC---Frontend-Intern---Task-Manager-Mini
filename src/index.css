@@ -72,7 +72,7 @@ html {
 }
 
 .filter-btn.active {
-  background-color: #1976d2; /* MUI primary */
+  background-color: #1976d2;
   color: #fff;
   border-color: #1976d2;
 }

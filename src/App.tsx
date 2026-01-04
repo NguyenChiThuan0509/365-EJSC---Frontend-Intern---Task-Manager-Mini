@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 import type { Task } from "./types/task";
+import type { Filter } from "./types/filter";
 import { TaskList } from "./components/TaskList/TaskList";
 import CreateNewTask from "./components/CreateNewTask/CreateNewTask";
-
-type Filter = "all" | "completed" | "active";
 
 function App() {
   const [tasks, setTasks] = useState<Task[]>(() => {
@@ -24,17 +23,17 @@ function App() {
       title,
       completed: false,
     };
-    setTasks((prev) => [newTask, ...prev]);
+    setTasks((tasks) => [newTask, ...tasks]);
   };
 
   // Xóa Task
   const deleteTask = (id: number) => {
-    setTasks((prev) => prev.filter((task) => task.id !== id));
+    setTasks((tasks) => tasks.filter((task) => task.id !== id));
   };
 
   const toggleTask = (id: number) => {
-    setTasks((prev) =>
-      prev.map((task) =>
+    setTasks((tasks) =>
+      tasks.map((task) =>
         task.id === id ? { ...task, completed: !task.completed } : task
       )
     );
